@@ -12,6 +12,3 @@ random = 1 + Random.rand(100)
 		puts ":("
 
 end
-
-
-
