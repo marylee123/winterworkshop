@@ -5,7 +5,7 @@ puts "Done!"
 puts "Where do you want to start? The Kalos reigion or the Kanto region?"
 puts "You'll get a pokedex for your journey"
 region = STDIN.gets.chomp
-if region == "Kanto"
+if region == "kanto"
 	puts "Choose from these three Pokemon"
 	puts "1. Charmander"
 	puts "2. Bulbasaur"
@@ -13,7 +13,7 @@ if region == "Kanto"
 	puts "This will be your beginner Pokemon."
 	puts "Would you like to use your pokedex?"
 	pokedex = STDIN.gets.chomp
-	if pokedex == yes
+	if pokedex == "yes"
 		puts "Which one will you like to know more about?"
 		info = STDIN.gets.chomp
 		if info == "charmander" 
@@ -29,14 +29,14 @@ if region == "Kanto"
 	puts "Once you have chosen your Pokemon please insert it"
 	beginner = STDIN.gets.chomp
 	puts "Great your all set to go!"
-end
-elsif region = "Kalos"
+elsif region == "kalos"
 	puts "Choose from these three Pokemon"
 	puts "1. Froakie"
 	puts "2. Fenniken"
 	puts "3. Chespin"
 	puts "This will be your beginner Pokemon."
 	puts "Would you like to use your pokedex?"
+	pokedex = STDIN.gets.chomp
 	if pokedex == "yes"
 		puts "Which one will you like to know more about?"
 		information = STDIN.gets.chomp
@@ -52,8 +52,18 @@ elsif region = "Kalos"
 	end
 	puts "Once you have chosen your Pokemon please insert it"
 	first = STDIN.gets.chomp
-	puts "Great your all set to go!"
-	pokedex = STDIN.gets.chomp
+	puts "Great you're all set to go!"
 end
+puts "Where will you like to go? You can go to the Pokemon Center or stay outside overnight."
+where = STDIN.gets.chomp
+if where == "pokemon center"
+	puts "Ok. Make sure to get there before dark!"
+elsif where == "stay outside"
+	puts "Ok. Make sure to make your tent before dark!"
+end
+puts "You spotted a fletching!"
+puts "Enter 1 if you want to catch it and attack."
+puts "Enter 2 if you don't want to do anything with it."
+battle = STDIN.gets.chomp
 
 	
